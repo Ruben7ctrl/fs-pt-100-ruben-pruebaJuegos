@@ -36,7 +36,7 @@ def handle_hello():
 
 @api.route('/productos')
 def get_productos():
-    tabla = DBF('/workspaces/fs-pt-100-ruben-pruebaJuegos/src/front/assets/carrito.dbf', encoding='latin1')
+    tabla = DBF('/workspaces/fs-pt-100-ruben-pruebaJuegos/src/front/assets/factural.dbf', encoding='latin1')
     productos = [dict(row) for row in tabla]
     return jsonify(productos)
 
